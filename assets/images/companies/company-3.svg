@@ -1,9 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180">
-<rect width="300" height="180" rx="14" fill="#FFFFFF"/>
-<rect x="6" y="6" width="288" height="168" rx="10" fill="none" stroke="#B71C1C" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
-<circle cx="150" cy="72" r="32" fill="#B71C1C" opacity="0.12"/>
-<rect x="134" y="56" width="32" height="32" rx="6" fill="none" stroke="#B71C1C" stroke-width="4"/>
-<line x1="134" y1="72" x2="166" y2="72" stroke="#B71C1C" stroke-width="3"/>
-<text x="150" y="130" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#B71C1C">Company 3 Logo</text>
-<text x="150" y="152" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Replace this file</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="suryaSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="#D32F2F"/>
+    </linearGradient>
+    <linearGradient id="goldRay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <filter id="suryaShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#D32F2F" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <rect width="320" height="140" rx="14" fill="#FFFFFF"/>
+  
+  <!-- Surya Sunburst Emblem -->
+  <g transform="translate(68, 70)" filter="url(#suryaShadow)">
+    <!-- Radiating Sun Rays -->
+    <path d="M0 -34 L4 -22 L-4 -22 Z" fill="url(#goldRay)"/>
+    <path d="M24 -24 L16 -16 L22 -10 Z" fill="url(#goldRay)"/>
+    <path d="M34 0 L22 4 L22 -4 Z" fill="url(#goldRay)"/>
+    <path d="M24 24 L16 16 L10 22 Z" fill="url(#goldRay)"/>
+    <path d="M0 34 L-4 22 L4 22 Z" fill="url(#goldRay)"/>
+    <path d="M-24 24 L-16 16 L-22 10 Z" fill="url(#goldRay)"/>
+    <path d="M-34 0 L-22 -4 L-22 4 Z" fill="url(#goldRay)"/>
+    <path d="M-24 -24 L-16 -16 L-10 -22 Z" fill="url(#goldRay)"/>
+    <!-- Central Solar Disc -->
+    <circle cx="0" cy="0" r="18" fill="url(#suryaSun)"/>
+    <circle cx="0" cy="0" r="14" fill="#FFFFFF" opacity="0.25"/>
+    <circle cx="0" cy="0" r="8" fill="#FFF"/>
+  </g>
+  
+  <!-- Typography -->
+  <g transform="translate(122, 54)">
+    <text font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="30" font-weight="900" fill="#D32F2F" letter-spacing="1.5">
+      SURYA
+    </text>
+    <text y="24" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#E65100" letter-spacing="2">
+      APPLIANCES &amp; LED
+    </text>
+    <text y="40" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="600" fill="#78909C" letter-spacing="1">
+      ★ FANS · GEYSERS · KITCHEN ★
+    </text>
+  </g>
 </svg>

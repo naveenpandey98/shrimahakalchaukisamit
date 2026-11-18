@@ -74,7 +74,7 @@
             <li class="nav-item"><a class="nav-link" href="#events"><span class="nav-hi">कार्यक्रम</span><span class="nav-en">Events &amp; Programs</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#gallery"><span class="nav-hi">झांकियां</span><span class="nav-en">Jhakiya</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#committee"><span class="nav-hi">समिति सदस्य</span><span class="nav-en">Committee</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#sponsors"><span class="nav-hi">सहयोगी प्रायोजक</span><span class="nav-en">Our Sponsors</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#sponsors"><span class="nav-hi">मुख्य प्रायोजक</span><span class="nav-en">Principal Sponsor</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-hi">संपर्क</span><span class="nav-en">Contact Us</span></a></li>
             <li class="nav-item"><a class="btn-mahadev btn-small nav-cta" href="#home"><i class="bi bi-brightness-high-fill"></i> हर हर महादेव</a></li>
           </ul>
@@ -86,63 +86,91 @@
   <main id="main">
 
     <!-- =====================================================================
-         HERO SECTION: DYNAMIC SLIDING BANNER (4-5 BANNERS WITH FOREGROUND TEXT)
+         HERO SECTION: 3-SLIDE DYNAMIC BANNER (REFERENCE DESIGN PATTERN)
          ===================================================================== -->
-    <section class="hero-slider-section" id="home" aria-labelledby="heroTitle">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500" data-bs-pause="hover">
+    <section class="banner-hero-section" id="home" aria-labelledby="heroTitle">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover">
         
-        <!-- Indicators (Numbered Navigation Pills) -->
-        <div class="carousel-indicators hero-indicators">
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="बैनर 1: महाकाल चौकी समिति">
-            <span class="indicator-num">01</span>
-            <span class="indicator-label">महाकाल चौकी समिति</span>
-          </button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="बैनर 2: ऐतिहासिक मेला">
-            <span class="indicator-num">02</span>
-            <span class="indicator-label">ऐतिहासिक मेला</span>
-          </button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="बैनर 3: पावन झांकियां">
-            <span class="indicator-num">03</span>
-            <span class="indicator-label">दिव्य झांकियां</span>
-          </button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="बैनर 4: महाआरती व अनुष्ठान">
-            <span class="indicator-num">04</span>
-            <span class="indicator-label">पावन महाआरती</span>
-          </button>
-          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="बैनर 5: संगठन व मुख्य प्रायोजक">
-            <span class="indicator-num">05</span>
-            <span class="indicator-label">संगठन व प्रायोजक</span>
-          </button>
+        <!-- Modern Bottom Pagination (Pill & Dots) -->
+        <div class="carousel-indicators banner-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="स्लाइड 1: श्री महाकाल चौकी समिति"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="स्लाइड 2: ऐतिहासिक मेला"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="स्लाइड 3: पावन शोभायात्रा व झांकियां"></button>
         </div>
 
         <div class="carousel-inner">
 
           <!-- SLIDE 1: Shri Mahakal Chauki Samiti - Bandhwa Padav -->
           <div class="carousel-item active">
-            <div class="hero-slide-bg">
-              <img src="assets/images/banners/banner-1.jpg" alt="श्री महाकाल चौकी समिति, बांधवा पड़ाव" class="hero-bg-img" loading="eager">
-              <div class="hero-slide-overlay"></div>
-            </div>
-            <div class="container hero-slide-container">
-              <div class="hero-slide-content text-center">
-                <span class="hero-mantra">॥ हर हर महादेव ॥</span>
-                <h1 class="hero-title" id="heroTitle">श्री महाकाल चौकी समिति</h1>
-                <div class="hero-cartouche-wrap">
-                  <span class="cartouche-flourish" aria-hidden="true">❧</span>
-                  <span class="hero-cartouche">बंधवा पड़ाव</span>
-                  <span class="cartouche-flourish" aria-hidden="true">☙</span>
-                </div>
-                <p class="hero-text mx-auto">
-                  "हमारी ऐतिहासिक परंपरा, धार्मिक आस्था और सामाजिक एकता का प्रतीक।"
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  <span class="hero-pill-badge"><i class="bi bi-flag-fill text-danger"></i> ऐतिहासिक मेला</span>
-                  <span class="hero-pill-badge"><i class="bi bi-gem text-warning"></i> संगठन · सेवा · संस्कार</span>
-                  <span class="hero-pill-badge"><i class="bi bi-people-fill text-info"></i> 44+ समिति सदस्य</span>
-                </div>
-                <div class="hero-actions justify-content-center">
-                  <a class="btn-mahadev" href="#about"><i class="bi bi-people-fill"></i> हमारी समिति के बारे में</a>
-                  <a class="btn-gold-outline" href="#gallery"><i class="bi bi-images"></i> मेले की पावन झांकियां देखें</a>
+            <div class="banner-slide-wrap">
+              <div class="banner-bg-holder">
+                <img src="assets/images/banners/banner-1.jpg" alt="श्री महाकाल चौकी समिति, बांधवा पड़ाव" class="banner-bg-img" loading="eager">
+                <div class="banner-gradient-mask"></div>
+              </div>
+
+              <div class="container banner-content-container">
+                <div class="row align-items-center">
+                  <div class="col-lg-7 col-xl-6">
+                    <div class="banner-text-box">
+                      <div class="banner-eyebrow">
+                        <span class="eyebrow-accent">॥ हर हर महादेव ॥</span>
+                        <span class="eyebrow-sep">•</span>
+                        <span>बांधवा पड़ाव</span>
+                      </div>
+
+                      <h1 class="banner-heading" id="heroTitle">
+                        श्री महाकाल <span class="heading-accent">चौकी समिति</span>
+                      </h1>
+
+                      <p class="banner-subheading">
+                        "हमारी ऐतिहासिक परंपरा, धार्मिक आस्था और सामाजिक एकता का प्रतीक।"
+                      </p>
+
+                      <div class="banner-cta-group">
+                        <a class="banner-btn-primary" href="#about">
+                          <span>हमारी समिति के बारे में</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a class="banner-btn-secondary" href="#gallery">
+                          <i class="bi bi-images"></i>
+                          <span>मेले की झलकियां</span>
+                        </a>
+                      </div>
+
+                      <div class="banner-feature-row">
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-flag-fill"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">ऐतिहासिक मेला</span>
+                            <span class="feature-desc">गौरवशाली परंपरा</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-gem"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">संगठन · सेवा · संस्कार</span>
+                            <span class="feature-desc">समिति के मूल मूल्य</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">44+ समिति सदस्य</span>
+                            <span class="feature-desc">समर्पित कार्यकर्ता</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -150,30 +178,75 @@
 
           <!-- SLIDE 2: Historical Village Fair / Aitihasik Mela -->
           <div class="carousel-item">
-            <div class="hero-slide-bg">
-              <img src="assets/images/banners/banner-2.jpg" alt="बांधवा पड़ाव का ऐतिहासिक मेला" class="hero-bg-img" loading="lazy">
-              <div class="hero-slide-overlay"></div>
-            </div>
-            <div class="container hero-slide-container">
-              <div class="hero-slide-content text-center">
-                <span class="hero-mantra">॥ जय श्री महाकाल ॥</span>
-                <h2 class="hero-title">बांधवा पड़ाव का ऐतिहासिक मेला</h2>
-                <div class="hero-cartouche-wrap">
-                  <span class="cartouche-flourish" aria-hidden="true">❧</span>
-                  <span class="hero-cartouche">गौरवशाली परंपरा</span>
-                  <span class="cartouche-flourish" aria-hidden="true">☙</span>
-                </div>
-                <p class="hero-text mx-auto">
-                  "दशकों पुरानी सांस्कृतिक धरोहर, धार्मिक उल्लास एवं संपूर्ण ग्रामीण क्षेत्र की समरसता का विराट संगम।"
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  <span class="hero-pill-badge"><i class="bi bi-sun-fill text-warning"></i> प्राचीन ग्रामीण मेला</span>
-                  <span class="hero-pill-badge"><i class="bi bi-stars text-warning"></i> पारंपरिक सांस्कृतिक उत्सव</span>
-                  <span class="hero-pill-badge"><i class="bi bi-geo-alt-fill text-danger"></i> बांधवा पड़ाव तीर्थ प्रांगण</span>
-                </div>
-                <div class="hero-actions justify-content-center">
-                  <a class="btn-mahadev" href="#mela"><i class="bi bi-journal-text"></i> मेले का इतिहास पढ़ें</a>
-                  <a class="btn-gold-outline" href="#events"><i class="bi bi-calendar-check-fill"></i> मुख्य कार्यक्रम देखें</a>
+            <div class="banner-slide-wrap">
+              <div class="banner-bg-holder">
+                <img src="assets/images/banners/banner-2.jpg" alt="बांधवा पड़ाव का ऐतिहासिक मेला" class="banner-bg-img" loading="lazy">
+                <div class="banner-gradient-mask"></div>
+              </div>
+
+              <div class="container banner-content-container">
+                <div class="row align-items-center">
+                  <div class="col-lg-7 col-xl-6">
+                    <div class="banner-text-box">
+                      <div class="banner-eyebrow">
+                        <span class="eyebrow-accent">॥ जय श्री महाकाल ॥</span>
+                        <span class="eyebrow-sep">•</span>
+                        <span>वार्षिक महाउत्सव</span>
+                      </div>
+
+                      <h2 class="banner-heading">
+                        बांधवा पड़ाव का <span class="heading-accent">ऐतिहासिक मेला</span>
+                      </h2>
+
+                      <p class="banner-subheading">
+                        "दशकों पुरानी सांस्कृतिक धरोहर, धार्मिक उल्लास एवं संपूर्ण ग्रामीण क्षेत्र की समरसता का विराट संगम।"
+                      </p>
+
+                      <div class="banner-cta-group">
+                        <a class="banner-btn-primary" href="#mela">
+                          <span>मेले का इतिहास पढ़ें</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a class="banner-btn-secondary" href="#events">
+                          <i class="bi bi-calendar-event"></i>
+                          <span>मुख्य कार्यक्रम</span>
+                        </a>
+                      </div>
+
+                      <div class="banner-feature-row">
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-sun-fill"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">ग्रामीण मेला</span>
+                            <span class="feature-desc">पारंपरिक संस्कृति</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-stars"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">विशाल जनसमूह</span>
+                            <span class="feature-desc">अटूट जन-आस्था</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">तीर्थ प्रांगण</span>
+                            <span class="feature-desc">बांधवा पड़ाव स्थल</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -181,92 +254,75 @@
 
           <!-- SLIDE 3: Grand Shobha Yatra & Divine Jhankis -->
           <div class="carousel-item">
-            <div class="hero-slide-bg">
-              <img src="assets/images/banners/banner-3.jpg" alt="भव्य शोभायात्रा एवं पावन झांकियां" class="hero-bg-img" loading="lazy">
-              <div class="hero-slide-overlay"></div>
-            </div>
-            <div class="container hero-slide-container">
-              <div class="hero-slide-content text-center">
-                <span class="hero-mantra">॥ ॐ नमः शिवाय ॥</span>
-                <h2 class="hero-title">अलौकिक शोभायात्रा एवं झांकियां</h2>
-                <div class="hero-cartouche-wrap">
-                  <span class="cartouche-flourish" aria-hidden="true">❧</span>
-                  <span class="hero-cartouche">दिव्य दर्शन</span>
-                  <span class="cartouche-flourish" aria-hidden="true">☙</span>
-                </div>
-                <p class="hero-text mx-auto">
-                  "ऐतिहासिक मेले के पावन अवसर पर भगवान श्री महाकाल की भव्य सवारी व 6 दिव्य झांकियों के अलौकिक दर्शन।"
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  <span class="hero-pill-badge"><i class="bi bi-shield-fill-check text-warning"></i> श्री महाकाल पालकी सवारी</span>
-                  <span class="hero-pill-badge"><i class="bi bi-fire text-danger"></i> रुद्र तांडव व भस्म आरती</span>
-                  <span class="hero-pill-badge"><i class="bi bi-magic text-info"></i> 6 विशेष जीवंत झांकियां</span>
-                </div>
-                <div class="hero-actions justify-content-center">
-                  <a class="btn-mahadev" href="#gallery"><i class="bi bi-images"></i> सभी झांकियों के दर्शन करें</a>
-                  <a class="btn-gold-outline" href="#events"><i class="bi bi-compass-fill"></i> शोभायात्रा विवरण</a>
-                </div>
+            <div class="banner-slide-wrap">
+              <div class="banner-bg-holder">
+                <img src="assets/images/banners/banner-3.jpg" alt="अलौकिक शोभायात्रा एवं भव्य झांकियां" class="banner-bg-img" loading="lazy">
+                <div class="banner-gradient-mask"></div>
               </div>
-            </div>
-          </div>
 
-          <!-- SLIDE 4: Maha Aarti & Religious Rituals -->
-          <div class="carousel-item">
-            <div class="hero-slide-bg">
-              <img src="assets/images/banners/banner-4.jpg" alt="पावन महाआरती एवं रुद्राभिषेक" class="hero-bg-img" loading="lazy">
-              <div class="hero-slide-overlay"></div>
-            </div>
-            <div class="container hero-slide-container">
-              <div class="hero-slide-content text-center">
-                <span class="hero-mantra">॥ कर्पूरगौरं करुणावतारम् ॥</span>
-                <h2 class="hero-title">पावन महाआरती एवं रुद्राभिषेक</h2>
-                <div class="hero-cartouche-wrap">
-                  <span class="cartouche-flourish" aria-hidden="true">❧</span>
-                  <span class="hero-cartouche">108 दीप महाआरती</span>
-                  <span class="cartouche-flourish" aria-hidden="true">☙</span>
-                </div>
-                <p class="hero-text mx-auto">
-                  "वैदिक मंत्रोच्चार, शंखनाद, डमरू की ध्वनि और 108 अखंड दीपों की ज्योति से पावन होता बांधवा पड़ाव धाम।"
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  <span class="hero-pill-badge"><i class="bi bi-brightness-high-fill text-warning"></i> 108 दीप महाआरती</span>
-                  <span class="hero-pill-badge"><i class="bi bi-droplet-fill text-info"></i> पवित्र रुद्राभिषेक</span>
-                  <span class="hero-pill-badge"><i class="bi bi-bell-fill text-warning"></i> अखंड भजन संध्या</span>
-                </div>
-                <div class="hero-actions justify-content-center">
-                  <a class="btn-mahadev" href="#events"><i class="bi bi-calendar-event"></i> धार्मिक कार्यक्रम देखें</a>
-                  <a class="btn-gold-outline" href="#contact"><i class="bi bi-telephone-fill"></i> समिति से संपर्क करें</a>
-                </div>
-              </div>
-            </div>
-          </div>
+              <div class="container banner-content-container">
+                <div class="row align-items-center">
+                  <div class="col-lg-7 col-xl-6">
+                    <div class="banner-text-box">
+                      <div class="banner-eyebrow">
+                        <span class="eyebrow-accent">॥ ॐ नमः शिवाय ॥</span>
+                        <span class="eyebrow-sep">•</span>
+                        <span>दिव्य झांकियां</span>
+                      </div>
 
-          <!-- SLIDE 5: Organization, Values & PP Enterprises Sponsor -->
-          <div class="carousel-item">
-            <div class="hero-slide-bg">
-              <img src="assets/images/banners/banner-5.jpg" alt="संगठन सेवा संस्कार एवं मुख्य प्रायोजक" class="hero-bg-img" loading="lazy">
-              <div class="hero-slide-overlay"></div>
-            </div>
-            <div class="container hero-slide-container">
-              <div class="hero-slide-content text-center">
-                <span class="hero-mantra">॥ संगठन ● सेवा ● संस्कार ॥</span>
-                <h2 class="hero-title">श्री महाकाल चौकी समिति परिवार</h2>
-                <div class="hero-cartouche-wrap">
-                  <span class="cartouche-flourish" aria-hidden="true">❧</span>
-                  <span class="hero-cartouche">Principal Sponsor: PP Enterprises</span>
-                  <span class="cartouche-flourish" aria-hidden="true">☙</span>
-                </div>
-                <p class="hero-text mx-auto">
-                  "समर्पित 44+ सदस्यों की एकजुट शक्ति एवं मुख्य सहयोगी पी. पी. एंटरप्राइजेज (PP Enterprises | 9506210346) का पावन सहयोग।"
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  <span class="hero-pill-badge"><i class="bi bi-award-fill text-warning"></i> मुख्य प्रायोजक: PP Enterprises</span>
-                  <span class="hero-pill-badge"><i class="bi bi-people-fill text-primary"></i> 44+ समिति सदस्य</span>
-                  <span class="hero-pill-badge"><i class="bi bi-telephone-fill text-success"></i> 9506210346</span>
-                </div>
-                <div class="hero-actions justify-content-center">
-                  <a class="btn-mahadev" href="pp-enterprises.html"><i class="bi bi-briefcase-fill"></i> PP Enterprises एक्सप्लोर करें</a>
-                  <a class="btn-gold-outline" href="#committee"><i class="bi bi-person-lines-fill"></i> समिति सदस्यों की सूची</a>
+                      <h2 class="banner-heading">
+                        अलौकिक शोभायात्रा <span class="heading-accent">& झांकियां</span>
+                      </h2>
+
+                      <p class="banner-subheading">
+                        "मेले के पावन अवसर पर देवाधिदेव महादेव की भव्य सवारी व 6 दिव्य झांकियों के अलौकिक दर्शन।"
+                      </p>
+
+                      <div class="banner-cta-group">
+                        <a class="banner-btn-primary" href="#gallery">
+                          <span>सभी झांकियों के दर्शन</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a class="banner-btn-secondary" href="pp-enterprises.html">
+                          <i class="bi bi-award-fill"></i>
+                          <span>मुख्य प्रायोजक</span>
+                        </a>
+                      </div>
+
+                      <div class="banner-feature-row">
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-shield-fill-check"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">पालकी सवारी</span>
+                            <span class="feature-desc">श्री महाकाल की कृपा</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-fire"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">भस्म आरती & तांडव</span>
+                            <span class="feature-desc">अद्भुत स्वरूप</span>
+                          </div>
+                        </div>
+
+                        <div class="banner-feature-item">
+                          <div class="banner-feature-icon">
+                            <i class="bi bi-award-fill"></i>
+                          </div>
+                          <div class="banner-feature-info">
+                            <span class="feature-title">PP Enterprises</span>
+                            <span class="feature-desc">मुख्य सहयोगी</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,13 +330,18 @@
 
         </div>
 
-        <!-- Carousel Prev / Next Controls -->
-        <button class="carousel-control-prev hero-carousel-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="पिछला बैनर">
-          <span class="hero-nav-circle" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+        <!-- Left / Right Edge Circular Navigation Arrows (Matching Reference) -->
+        <button class="carousel-control-prev banner-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="पिछला बैनर">
+          <span class="banner-nav-arrow" aria-hidden="true">
+            <i class="bi bi-chevron-left"></i>
+          </span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next hero-carousel-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="अगला बैनर">
-          <span class="hero-nav-circle" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+
+        <button class="carousel-control-next banner-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="अगला बैनर">
+          <span class="banner-nav-arrow" aria-hidden="true">
+            <i class="bi bi-chevron-right"></i>
+          </span>
           <span class="visually-hidden">Next</span>
         </button>
 
@@ -557,8 +618,8 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-eyebrow">Committee Members</span>
-          <h2 class="section-title" id="committeeTitle">समिति के सम्मानित पदाधिकारी एवं सदस्य</h2>
-          <p class="section-lead">श्री महाकाल चौकी समिति, बांधवा पड़ाव के कर्मठ, समर्पित एवं सम्मानित मार्गदर्शक।</p>
+          <h2 class="section-title" id="committeeTitle">समिति के सम्मानित सदस्य</h2>
+          <p class="section-lead">श्री महाकाल चौकी समिति, बांधवा पड़ाव के कर्मठ, समर्पित एवं सम्मानित सदस्य।</p>
           <div class="gold-divider"><span class="gold-divider-icon"></span></div>
         </div>
 
@@ -570,9 +631,9 @@
                 <img class="member-photo" src="assets/images/committee/member-1.svg" alt="संतोष सिंह (रिड्डु सिंह)" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">संतोष सिंह <small class="d-block text-muted" style="font-size:0.85rem;">(रिड्डु सिंह)</small></h3>
-              <span class="member-role">संरक्षक / वरिष्ठ सदस्य</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP01</span></div>
-              <p class="member-text">समिति के वरिष्ठ संरक्षक, धार्मिक आयोजनों एवं ऐतिहासिक मेले के संचालन में अनुभवी मार्गदर्शन।</p>
+              <p class="member-text">धार्मिक आयोजनों एवं ऐतिहासिक मेले के सफल संचालन में समर्पित सेवा एवं सक्रिय सहभागिता।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/official-id-card-sample.jpg" data-name="संतोष सिंह (रिड्डु सिंह)" data-id="BANP01">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -586,9 +647,9 @@
                 <img class="member-photo" src="assets/images/committee/member-2.svg" alt="छेदी अन्सारी (प्रधान)" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">छेदी अन्सारी <small class="d-block text-muted" style="font-size:0.85rem;">(प्रधान)</small></h3>
-              <span class="member-role">ग्राम प्रधान / मुख्य संरक्षक</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP02</span></div>
-              <p class="member-text">ग्राम बंधवा पड़ाव के प्रधान, मेले की सामाजिक एकता, शांति व्यवस्था एवं विकास कार्यों के मजबूत स्तंभ।</p>
+              <p class="member-text">मेले की सामाजिक एकता, शांति व्यवस्था एवं विकास कार्यों में सतत सक्रिय सहयोग।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/committee/card-banp02.jpg" data-name="छेदी अन्सारी (प्रधान)" data-id="BANP02">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -602,9 +663,9 @@
                 <img class="member-photo" src="assets/images/committee/member-3.svg" alt="विनोद कुमार (बल्लू)" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">विनोद कुमार <small class="d-block text-muted" style="font-size:0.85rem;">(बल्लू)</small></h3>
-              <span class="member-role">अध्यक्ष / समिति प्रमुख</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP03</span></div>
-              <p class="member-text">मेला प्रबंधन, अनुष्ठान नियोजन एवं समिति के समस्त कार्यवाहियों के कुशल एवं ऊर्जावान नेतृत्वकर्ता।</p>
+              <p class="member-text">मेला प्रबंधन, अनुष्ठान नियोजन एवं समिति के समस्त कार्यों में ऊर्जावान सहभागिता।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/committee/card-banp03.jpg" data-name="विनोद कुमार (बल्लू)" data-id="BANP03">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -618,9 +679,9 @@
                 <img class="member-photo" src="assets/images/committee/member-4.svg" alt="अभिषेक दुबे (पिंटू दुबे)" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">अभिषेक दुबे <small class="d-block text-muted" style="font-size:0.85rem;">(पिंटू दुबे)</small></h3>
-              <span class="member-role">उपाध्यक्ष / मेला प्रबंधक</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP04</span></div>
-              <p class="member-text">सांस्कृतिक मंच व्यवस्था, सुरक्षा एवं आगंतुक श्रद्धालुओं के स्वागत-सत्कार में समर्पित कर्मठ कार्यकर्ता।</p>
+              <p class="member-text">सांस्कृतिक मंच व्यवस्था, सुरक्षा एवं आगंतुक श्रद्धालुओं के स्वागत-सत्कार में समर्पित सेवा।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/committee/card-banp04.jpg" data-name="अभिषेक दुबे (पिंटू दुबे)" data-id="BANP04">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -634,7 +695,7 @@
                 <img class="member-photo" src="assets/images/committee/member-5.svg" alt="सिद्धू भोज्यवाल" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">सिद्धू भोज्यवाल</h3>
-              <span class="member-role">सचिव / संगठन मंत्री</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP05</span></div>
               <p class="member-text">संगठन विस्तार, संपर्क अभियान एवं मेले की आंतरिक व्यवस्थाओं के सुचारु निष्पादन में सक्रिय भूमिका।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/official-id-card-sample.jpg" data-name="सिद्धू भोज्यवाल" data-id="BANP05">
@@ -650,9 +711,9 @@
                 <img class="member-photo" src="assets/images/committee/member-6.svg" alt="विनय मोदनवाल" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">विनय मोदनवाल</h3>
-              <span class="member-role">कोषाध्यक्ष / वित्त प्रमुख</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP06</span></div>
-              <p class="member-text">समिति के वित्तीय अनुशासन, सहयोग निधि की पारदर्शिता एवं मेला संचालन के लेखा-जोखा के व्यवस्थापक।</p>
+              <p class="member-text">समिति के वित्तीय अनुशासन, सहयोग निधि एवं मेला संचालन के प्रबंधन में समर्पित सेवा।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/official-id-card-sample.jpg" data-name="विनय मोदनवाल" data-id="BANP06">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -666,7 +727,7 @@
                 <img class="member-photo" src="assets/images/committee/member-7.svg" alt="अशोक मोदनवाल" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">अशोक मोदनवाल</h3>
-              <span class="member-role">कार्यकारिणी सदस्य</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP07</span></div>
               <p class="member-text">धार्मिक पूजन, महाकाल आरती एवं समिति सेवा व्यवस्था में सदैव अग्रिम पंक्ति में सेवारत।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/official-id-card-sample.jpg" data-name="अशोक मोदनवाल" data-id="BANP07">
@@ -682,9 +743,9 @@
                 <img class="member-photo" src="assets/images/committee/member-8.svg" alt="आकाश मोदनवाल" loading="lazy" width="150" height="150">
               </div>
               <h3 class="member-name">आकाश मोदनवाल</h3>
-              <span class="member-role">युवा मोर्चा संयोजक</span>
+              <span class="member-role">समिति सदस्य</span>
               <div><span class="member-id-pill">ID : BANP08</span></div>
-              <p class="member-text">युवा स्वयंसेवकों का संयोजन, डिजिटल प्रचार एवं मेले में जनसुविधाओं की निगरानी में सतत सक्रिय।</p>
+              <p class="member-text">युवा स्वयंसेवकों का संयोजन, डिजिटल व्यवस्था एवं मेले में जनसुविधाओं की निगरानी में सतत सक्रिय।</p>
               <button class="btn-card-preview" type="button" data-card="assets/images/official-id-card-sample.jpg" data-name="आकाश मोदनवाल" data-id="BANP08">
                 <i class="bi bi-person-vcard"></i> पहचान पत्र देखें
               </button>
@@ -759,10 +820,17 @@
                   </span>
                 </div>
                 <a class="ppe-name-link" href="pp-enterprises.html"><h3 class="ppe-name">PP ENTERPRISES</h3></a>
-                <p class="ppe-tagline">"Your Trusted Distribution Partner for Electronic Products"</p>
+                <p class="ppe-tagline">"Power Up Your Life" — Your Trusted Distribution Partner</p>
                 <p class="ppe-text">
-                  पाँच प्रतिष्ठित कंपनियों के अधिकृत वितरण (Distributorship) से जुड़ी <strong>PP Enterprises</strong> इलेक्ट्रॉनिक उत्पादों की विस्तृत श्रृंखला, B2B सप्लाई, रिटेलर एवं डीलर नेटवर्क के साथ विश्वसनीय व्यावसायिक साझेदारी का अग्रणी नाम है।
+                  5 प्रतिष्ठित राष्ट्रीय कंपनियों—<strong>Nandicab</strong> (वायर्स व केबल), <strong>Wipro</strong> (स्मार्ट एलईडी लाइटिंग), <strong>Surya Appliances</strong> (घरेलू उपकरण), <strong>Traflic</strong> (स्विचगियर व फिटिंग्स) एवं <strong>Hosper</strong> (लक्ज़री मॉड्यूलर स्विच)—के अधिकृत वितरण (Distributorship) से जुड़ी <strong>PP Enterprises</strong> इलेक्ट्रॉनिक उत्पादों के क्षेत्र में विश्वसनीय व्यावसायिक साझेदारी का अग्रणी नाम है।
                 </p>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <span class="badge bg-light text-dark border px-2 py-1"><i class="bi bi-patch-check-fill text-success"></i> Nandicab</span>
+                  <span class="badge bg-light text-dark border px-2 py-1"><i class="bi bi-patch-check-fill text-success"></i> Wipro</span>
+                  <span class="badge bg-light text-dark border px-2 py-1"><i class="bi bi-patch-check-fill text-success"></i> Surya Appliances</span>
+                  <span class="badge bg-light text-dark border px-2 py-1"><i class="bi bi-patch-check-fill text-success"></i> Traflic</span>
+                  <span class="badge bg-light text-dark border px-2 py-1"><i class="bi bi-patch-check-fill text-success"></i> Hosper</span>
+                </div>
                 <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
                   <a class="btn-mahadev ppe-cta" href="pp-enterprises.html">
                     Explore Business <i class="bi bi-arrow-right-circle-fill"></i>
@@ -774,44 +842,6 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- 2. TITLE SPONSOR -->
-        <h3 class="sponsor-tier-label reveal"><span>टाइटल प्रायोजक<span class="sponsor-tier-en">Title Sponsor</span></span></h3>
-        <div class="row justify-content-center reveal">
-          <div class="col-md-6 col-lg-5">
-            <a class="sponsor-card sponsor-title-card" href="#" data-sponsor="title" target="_blank" rel="noopener">
-              <img class="sponsor-logo" src="assets/images/sponsors/title-sponsor.svg" alt="Title Sponsor logo" loading="lazy" width="300" height="160">
-            </a>
-          </div>
-        </div>
-
-        <!-- 3. GOLD SPONSORS -->
-        <h3 class="sponsor-tier-label reveal"><span>गोल्ड प्रायोजक<span class="sponsor-tier-en">Gold Sponsors</span></span></h3>
-        <div class="row g-4 justify-content-center">
-          <div class="col-6 col-md-4 reveal"><a class="sponsor-card sponsor-gold-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/gold-1.svg" alt="Gold Sponsor 1 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 reveal reveal-delay-1"><a class="sponsor-card sponsor-gold-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/gold-2.svg" alt="Gold Sponsor 2 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 reveal reveal-delay-2"><a class="sponsor-card sponsor-gold-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/gold-3.svg" alt="Gold Sponsor 3 logo" loading="lazy" width="300" height="160"></a></div>
-        </div>
-
-        <!-- 4. SILVER SPONSORS -->
-        <h3 class="sponsor-tier-label reveal"><span>सिल्वर प्रायोजक<span class="sponsor-tier-en">Silver Sponsors</span></span></h3>
-        <div class="row g-4 justify-content-center">
-          <div class="col-6 col-md-3 reveal"><a class="sponsor-card sponsor-silver-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/silver-1.svg" alt="Silver Sponsor 1 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-3 reveal reveal-delay-1"><a class="sponsor-card sponsor-silver-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/silver-2.svg" alt="Silver Sponsor 2 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-3 reveal reveal-delay-2"><a class="sponsor-card sponsor-silver-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/silver-3.svg" alt="Silver Sponsor 3 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-3 reveal reveal-delay-3"><a class="sponsor-card sponsor-silver-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/silver-4.svg" alt="Silver Sponsor 4 logo" loading="lazy" width="300" height="160"></a></div>
-        </div>
-
-        <!-- 5. SUPPORTING SPONSORS -->
-        <h3 class="sponsor-tier-label reveal"><span>सहयोगी प्रायोजक<span class="sponsor-tier-en">Supporting Sponsors</span></span></h3>
-        <div class="row g-3 justify-content-center">
-          <div class="col-6 col-md-4 col-lg-2 reveal"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-1.svg" alt="Supporting Sponsor 1 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-1"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-2.svg" alt="Supporting Sponsor 2 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-2"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-3.svg" alt="Supporting Sponsor 3 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 col-lg-2 reveal"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-4.svg" alt="Supporting Sponsor 4 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-1"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-5.svg" alt="Supporting Sponsor 5 logo" loading="lazy" width="300" height="160"></a></div>
-          <div class="col-6 col-md-4 col-lg-2 reveal reveal-delay-2"><a class="sponsor-card sponsor-support-card" href="#" target="_blank" rel="noopener"><img class="sponsor-logo" src="assets/images/sponsors/support-6.svg" alt="Supporting Sponsor 6 logo" loading="lazy" width="300" height="160"></a></div>
         </div>
       </div>
     </section>
@@ -949,8 +979,8 @@
         <div class="col-6 col-lg-2">
           <h4 class="footer-title">मुख्य अनुभाग</h4>
           <ul class="footer-links">
-            <li><a href="#committee">समिति पदाधिकारी</a></li>
-            <li><a href="#sponsors">सहयोगी प्रायोजक</a></li>
+            <li><a href="#committee">समिति सदस्य</a></li>
+            <li><a href="#sponsors">मुख्य प्रायोजक (PP Enterprises)</a></li>
             <li><a href="#contact">संपर्क करें</a></li>
             <li><a href="pp-enterprises.html">PP Enterprises</a></li>
           </ul>

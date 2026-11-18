@@ -61,7 +61,7 @@
 .pp-header.is-scrolled { box-shadow: 0 8px 26px rgba(6, 20, 46, 0.14); }
 .pp-nav { min-height: var(--pp-header-h); }
 .pp-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.pp-brand-logo { width: 48px; height: 48px; border-radius: 12px; }
+.pp-brand-logo { width: 52px; height: 52px; border-radius: 12px; object-fit: contain; background: #FFFFFF; padding: 3px; border: 1px solid rgba(255, 255, 255, 0.2); }
 .pp-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .pp-brand-name { font-family: var(--pp-font-head); font-weight: 700; font-size: 1.15rem; color: var(--pp-navy); letter-spacing: 0.03em; }
 .pp-brand-tag { font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pp-gold); font-weight: 600; }
@@ -152,13 +152,17 @@
 .pp-showcase-ring-2 { inset: -2%; border: 1px solid rgba(255, 255, 255, 0.15); animation-direction: reverse; animation-duration: 60s; }
 .pp-showcase-core {
   position: absolute;
-  inset: 24%;
-  border-radius: 50%;
-  padding: 8px;
-  background: var(--pp-gold-grad);
-  box-shadow: 0 0 80px rgba(30, 136, 229, 0.55), 0 0 0 10px rgba(246, 216, 122, 0.12);
+  inset: 22%;
+  border-radius: 28px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 3px solid var(--pp-gold);
+  box-shadow: 0 0 80px rgba(30, 136, 229, 0.55), 0 0 0 8px rgba(246, 216, 122, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.pp-showcase-logo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--pp-navy); }
+.pp-showcase-logo { width: 100%; height: 100%; border-radius: 20px; object-fit: contain; background: #FFFFFF; }
 .pp-orbit-card {
   position: absolute;
   width: 74px;
@@ -223,34 +227,170 @@
 .pp-feature-title { font-family: var(--pp-font-head); font-size: 1.02rem; font-weight: 600; color: var(--pp-navy); margin: 0 0 4px; }
 .pp-feature-text { font-size: 0.88rem; color: var(--pp-muted); margin: 0; line-height: 1.55; }
 
-/* ---------- Partners ---------- */
+/* ---------- Enhanced Partner Cards (5 Companies) ---------- */
 .pp-partner-card {
   position: relative;
   height: 100%;
-  background: #fff;
-  border: 1px solid var(--pp-line);
-  border-radius: 20px;
-  padding: 26px 24px 24px;
-  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(11, 42, 91, 0.12);
+  border-radius: 22px;
+  padding: 28px 24px 26px;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 8px 24px rgba(11, 42, 91, 0.06);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
 }
-.pp-partner-card::before { content: ""; position: absolute; left: 24px; right: 24px; top: 0; height: 4px; border-radius: 0 0 6px 6px; background: var(--pp-gold-grad); }
-.pp-partner-card:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(11, 42, 91, 0.18); border-color: var(--pp-gold); }
-.pp-partner-number { position: absolute; top: 14px; right: 18px; font-family: var(--pp-font-head); font-weight: 800; font-size: 1.5rem; color: var(--pp-blue-soft); }
-.pp-partner-logo-wrap { height: 110px; display: grid; place-items: center; margin-bottom: 16px; background: var(--pp-bg); border-radius: 14px; padding: 10px; }
-.pp-partner-logo { max-width: 100%; max-height: 100%; object-fit: contain; }
-.pp-partner-name { font-family: var(--pp-font-head); font-weight: 700; font-size: 1.1rem; color: var(--pp-navy); margin: 0 0 6px; }
-.pp-partner-cat { display: inline-block; align-self: center; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--pp-blue); background: var(--pp-blue-soft); padding: 3px 12px; border-radius: 20px; margin-bottom: 10px; }
-.pp-partner-text { font-size: 0.88rem; color: var(--pp-muted); flex: 1; margin: 0 0 14px; }
-.pp-partner-link { font-size: 0.86rem; font-weight: 600; color: var(--pp-blue); text-decoration: none; }
-.pp-partner-link:hover { color: var(--pp-navy); }
-.pp-partner-link-off { color: #9aa7bd; pointer-events: none; }
 
-/* 5-column layout on very wide screens */
-@media (min-width: 1200px) {
-  .pp-col-fifth { flex: 0 0 auto; width: 20%; }
+.pp-partner-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  background: var(--pp-gold-grad);
+}
+
+.pp-partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(11, 42, 91, 0.16);
+  border-color: var(--pp-blue);
+}
+
+.pp-partner-top-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.partner-auth-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #0F5132;
+  background: #D1E7DD;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.pp-partner-number {
+  font-family: var(--pp-font-head);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #CBD5E1;
+}
+
+.pp-partner-logo-wrap {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 12px 18px;
+  transition: all 0.3s ease;
+}
+
+.pp-partner-card:hover .pp-partner-logo-wrap {
+  border-color: rgba(0, 166, 251, 0.4);
+  background: #FFFFFF;
+}
+
+.pp-partner-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pp-partner-name {
+  font-family: var(--pp-font-head);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--pp-navy);
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.pp-partner-cat {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0056B3;
+  background: #EBF5FF;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.pp-partner-text {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+/* Key product tags */
+.pp-partner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.pp-prod-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+  background: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  padding: 3px 9px;
+  border-radius: 12px;
+}
+
+.partner-enquire-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  color: var(--pp-navy);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.partner-enquire-btn:hover {
+  background: var(--pp-navy);
+  color: #FFFFFF !important;
+  border-color: var(--pp-navy);
+  box-shadow: 0 4px 12px rgba(11, 42, 91, 0.25);
+}
+
+.partner-enquire-btn i {
+  color: #FFB300;
+  transition: transform 0.25s ease;
+}
+
+.partner-enquire-btn:hover i {
+  color: #FFFFFF;
+  transform: translateX(3px);
 }
 
 /* ---------- Product categories ---------- */
@@ -335,7 +475,7 @@
 .pp-footer { background: var(--pp-navy-deep); color: rgba(255, 255, 255, 0.75); padding-top: 70px; position: relative; }
 .pp-footer::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: linear-gradient(90deg, var(--pp-saffron), var(--pp-gold), var(--pp-blue)); }
 .pp-footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; text-decoration: none; }
-.pp-footer-logo { width: 56px; height: 56px; border-radius: 14px; }
+.pp-footer-logo { width: 56px; height: 56px; border-radius: 12px; object-fit: contain; background: #FFFFFF; padding: 4px; }
 .pp-footer-brand-name { font-family: var(--pp-font-head); font-weight: 700; font-size: 1.2rem; color: #fff; letter-spacing: 0.03em; }
 .pp-footer-title { font-family: var(--pp-font-head); font-size: 1rem; font-weight: 600; color: #fff; margin: 0 0 18px; position: relative; padding-bottom: 10px; }
 .pp-footer-title::after { content: ""; position: absolute; left: 0; bottom: 0; width: 36px; height: 2px; background: var(--pp-gold-grad); }

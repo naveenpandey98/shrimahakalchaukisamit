@@ -1,9 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180">
-<rect width="300" height="180" rx="14" fill="#FFFFFF"/>
-<rect x="6" y="6" width="288" height="168" rx="10" fill="none" stroke="#E65100" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
-<circle cx="150" cy="72" r="32" fill="#E65100" opacity="0.12"/>
-<rect x="134" y="56" width="32" height="32" rx="6" fill="none" stroke="#E65100" stroke-width="4"/>
-<line x1="134" y1="72" x2="166" y2="72" stroke="#E65100" stroke-width="3"/>
-<text x="150" y="130" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#E65100">Company 5 Logo</text>
-<text x="150" y="152" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Replace this file</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hosperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4527A0"/>
+      <stop offset="100%" stop-color="#311B92"/>
+    </linearGradient>
+    <linearGradient id="hosperGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+    <filter id="hosperShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#311B92" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+  <rect width="320" height="140" rx="14" fill="#FFFFFF"/>
+  
+  <!-- Hosper Luxury Modular Switch Emblem -->
+  <g transform="translate(68, 70)" filter="url(#hosperShadow)">
+    <!-- Rounded Modular Plate -->
+    <rect x="-32" y="-32" width="64" height="64" rx="14" fill="url(#hosperGrad)"/>
+    <!-- Gold Metallic Inlay Bezel -->
+    <rect x="-26" y="-26" width="52" height="52" rx="10" fill="none" stroke="url(#hosperGold)" stroke-width="2"/>
+    <!-- Center Switch Toggle 'H' Shape -->
+    <path d="M-10 -14 L-4 -14 L-4 -2 L4 -2 L4 -14 L10 -14 L10 14 L4 14 L4 4 L-4 4 L-4 14 L-10 14 Z" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Typography -->
+  <g transform="translate(122, 54)">
+    <text font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="28" font-weight="900" fill="#311B92" letter-spacing="1.5">
+      HOSPER
+    </text>
+    <text y="24" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFB300" letter-spacing="2">
+      MODULAR SWITCHES
+    </text>
+    <text y="40" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="600" fill="#78909C" letter-spacing="1">
+      ★ LUXURY ELECTRICAL SOLUTIONS ★
+    </text>
+  </g>
 </svg>

@@ -157,6 +157,25 @@
         }, 700);
       });
     });
+
+    document.querySelectorAll(".partner-enquire-btn").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var brand = btn.getAttribute("data-brand") || "";
+        var msgField = document.getElementById("eMessage");
+        if (msgField && brand) {
+          msgField.value = "I am interested in dealership & product supplies for " + brand + ". Please share pricing and catalog.";
+        }
+        var enquirySec = document.getElementById("ppEnquiry");
+        if (enquirySec) {
+          enquirySec.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        window.setTimeout(function () {
+          var nameInput = document.getElementById("eName");
+          if (nameInput) { nameInput.focus({ preventScroll: true }); }
+        }, 700);
+      });
+    });
   }
 
   /* ---------------------------------------------------------------------

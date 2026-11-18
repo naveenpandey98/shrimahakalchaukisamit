@@ -1,9 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180">
-<rect width="300" height="180" rx="14" fill="#FFFFFF"/>
-<rect x="6" y="6" width="288" height="168" rx="10" fill="none" stroke="#4A148C" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
-<circle cx="150" cy="72" r="32" fill="#4A148C" opacity="0.12"/>
-<rect x="134" y="56" width="32" height="32" rx="6" fill="none" stroke="#4A148C" stroke-width="4"/>
-<line x1="134" y1="72" x2="166" y2="72" stroke="#4A148C" stroke-width="3"/>
-<text x="150" y="130" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4A148C">Company 4 Logo</text>
-<text x="150" y="152" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">Replace this file</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="traflicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0288D1"/>
+      <stop offset="100%" stop-color="#01579B"/>
+    </linearGradient>
+    <linearGradient id="traflicOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </linearGradient>
+    <filter id="traflicShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#01579B" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <rect width="320" height="140" rx="14" fill="#FFFFFF"/>
+  
+  <!-- Traflic Hexagonal Power Emblem -->
+  <g transform="translate(68, 70)" filter="url(#traflicShadow)">
+    <!-- Hexagon -->
+    <polygon points="0,-34 30,-17 30,17 0,34 -30,17 -30,-17" fill="url(#traflicGrad)"/>
+    <polygon points="0,-26 23,-13 23,13 0,26 -23,13 -23,-13" fill="#FFFFFF" opacity="0.12"/>
+    <!-- Electric T motif -->
+    <path d="M-16 -12 L16 -12 L16 -4 L5 -4 L5 18 L-5 18 L-5 -4 L-16 -4 Z" fill="#FFFFFF"/>
+    <!-- Orange power spark dot -->
+    <circle cx="0" cy="8" r="4" fill="url(#traflicOrange)"/>
+  </g>
+  
+  <!-- Typography -->
+  <g transform="translate(122, 54)">
+    <text font-family="'Inter', 'Montserrat', Arial, sans-serif" font-size="28" font-weight="900" fill="#01579B" letter-spacing="1">
+      TRAFLIC
+    </text>
+    <text y="24" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#F57C00" letter-spacing="2">
+      SWITCHGEAR &amp; ACCESSORIES
+    </text>
+    <text y="40" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="600" fill="#78909C" letter-spacing="1">
+      ★ MCB · DB · FITTINGS ★
+    </text>
+  </g>
 </svg>
